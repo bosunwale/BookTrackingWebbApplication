@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\BookTracker\\BookTrackingApp\\BookTrackingApp\\BookTrackingApp.csproj",
+      "projectUniqueName": "E:\\BookTracker\\BookTrackingWebbApplication\\BookTrackingApp\\BookTrackingApp\\BookTrackingApp.csproj",
       "projectName": "BookTrackingApp",
-      "projectPath": "E:\\BookTracker\\BookTrackingApp\\BookTrackingApp\\BookTrackingApp.csproj",
+      "projectPath": "E:\\BookTracker\\BookTrackingWebbApplication\\BookTrackingApp\\BookTrackingApp\\BookTrackingApp.csproj",
       "packagesPath": "C:\\Users\\John_\\.nuget\\packages\\",
-      "outputPath": "E:\\BookTracker\\BookTrackingApp\\BookTrackingApp\\obj\\",
+      "outputPath": "E:\\BookTracker\\BookTrackingWebbApplication\\BookTrackingApp\\BookTrackingApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\John_\\AppData\\Roaming\\NuGet\\NuGet.Config",
