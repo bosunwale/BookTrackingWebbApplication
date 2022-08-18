@@ -15,5 +15,9 @@ namespace BookTrackingApp.Data
         }
 
         public DbSet<BookTrackingApp.Models.Book> Book { get; set; } = default!;
+
+        public DbSet<BookTrackingApp.Models.Category>? Category { get; set; }
+
+        public DbSet<BookTrackingApp.Models.CategoryType>? CategoryType { get; set; }
     }
 }
