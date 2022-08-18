@@ -28,7 +28,7 @@ namespace BookTrackingApp.Pages.Books
                 return NotFound();
             }
 
-            var book = await _context.Book.FirstOrDefaultAsync(m => m.Id == id);
+            var book = await _context.Book.FirstOrDefaultAsync(m => m.BookId == id);
             if (book == null)
             {
                 return NotFound();

@@ -30,7 +30,7 @@ namespace BookTrackingApp.Pages.Books
                 return NotFound();
             }
 
-            var book =  await _context.Book.FirstOrDefaultAsync(m => m.Id == id);
+            var book =  await _context.Book.FirstOrDefaultAsync(m => m.BookId == id);
             if (book == null)
             {
                 return NotFound();
@@ -56,7 +56,7 @@ namespace BookTrackingApp.Pages.Books
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!BookExists(Book.Id))
+                if (!BookExists(Book.BookId))
                 {
                     return NotFound();
                 }
@@ -71,7 +71,7 @@ namespace BookTrackingApp.Pages.Books
 
         private bool BookExists(int id)
         {
-          return (_context.Book?.Any(e => e.Id == id)).GetValueOrDefault();
+          return (_context.Book?.Any(e => e.BookId == id)).GetValueOrDefault();
         }
     }
 }

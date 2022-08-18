@@ -20,13 +20,13 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Book[0].BookTitle)
+                @Html.DisplayNameFor(model => model.Book[0].ISBN)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Book[0].BookAuthor)
+                @Html.DisplayNameFor(model => model.Book[0].Title)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Book[0].BookRating)
+                @Html.DisplayNameFor(model => model.Book[0].Author)
             </th>
             <th></th>
         </tr>
@@ -35,18 +35,18 @@
 @foreach (var item in Model.Book) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.BookTitle)
+                @Html.DisplayFor(modelItem => item.ISBN)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.BookAuthor)
+                @Html.DisplayFor(modelItem => item.Title)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.BookRating)
+                @Html.DisplayFor(modelItem => item.Author)
             </td>
             <td>
-                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+                <a asp-page="./Edit" asp-route-id="@item.BookId">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.BookId">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.BookId">Delete</a>
             </td>
         </tr>
 }
