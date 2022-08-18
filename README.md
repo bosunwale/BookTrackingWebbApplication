@@ -1,4 +1,5 @@
-# BookTrackingWebbApplication
+# Title
+### Book Tracker Application
 
 ## Introduction
 This is a book tracking app created with .NET 6.0.
